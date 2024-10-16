@@ -4,7 +4,7 @@
    push:
    pull_request:
    schedule: 
-     - cron: '*/5 * * * *' 
+     - cron: '*/1 * * * *' 
    workflow_dispatch:
 
 
