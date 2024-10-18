@@ -7,8 +7,12 @@
       steps:
         - name: Checkout Code
         - uses: actions/checkout@v4
-        - name: Printing Folder
-          run: ls
+        - name: Setup Noode
+          uses: actions/setup-node@v3
+          with:
+            node-version: '20.x'
+          name: install Dependencies
+          run: npm ci  
 
       # checkout the code from the repository 
       # 1. Install deps of our react application 
