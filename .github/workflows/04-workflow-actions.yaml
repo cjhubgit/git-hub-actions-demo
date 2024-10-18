@@ -1,16 +1,19 @@
-name: 04 - Using Actions
-  
-  
+name: My Workflow
+
 on: push
 
 jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-          - name: Checkout Code
-          - uses: actions/checkout@v4
-          - name: Printing Folder
-            run: ls
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm test
+
       # checkout the code from the repository 
       # 1. Install deps of our react application 
       # 2. Excute automated testssh
