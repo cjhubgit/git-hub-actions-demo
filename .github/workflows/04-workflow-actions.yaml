@@ -8,9 +8,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: Checkout Code
-            uses: actions/checkout@4
+            uses: actions/checkout@5
           - name: Printing Folder
             run: ls
       # checkout the code from the repository 
       # 1. Install deps of our react application 
-      # 2. Excute automated test
+      # 2. Excute automated testssh
